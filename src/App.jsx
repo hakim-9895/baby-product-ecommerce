@@ -2,11 +2,13 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Register from './Combonents/Register'
 import Login from './Combonents/Login'
-import Home from './Dash/Home'
+import Home from './Combonents/main/Home'
 
-import Productprovider from './Dash/Productprovider'
-import Orderpage from './Dash/Orderpage'
-import Payment from './Dash/Payment'
+import Productprovider from './Combonents/main/Productprovider'
+import Orderpage from './Combonents/main/Orderpage'
+import Payment from './Combonents/main/Payment'
+import Adminhome from './Combonents/Admin/Adminhome'
+import Userdetails from './Combonents/Admin/Userdetails'
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
    <Route path='orderpage' element={<Orderpage/>}/>
    <Route path='payment' element={<Payment/>}/>
    <Route path='orderlist' element={<Orderpage/>}/>
+   <Route path='Admin' element={<Adminhome/>}/>
+   <Route path='User' element={<Userdetails/>}/>
 
 </Routes>
 </Productprovider>

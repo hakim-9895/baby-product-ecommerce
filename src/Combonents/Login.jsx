@@ -1,9 +1,10 @@
-
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // Make sure to import toastify's CSS
 
 function Login() {
   const navigate = useNavigate();
@@ -14,15 +15,12 @@ function Login() {
   });
 
   return (
-    
-    <div className="flex justify-center items-center h-screen bg-light-green  "
-   
-  >
-    <img
+    <div className="flex justify-center items-center h-screen bg-light-green">
+      <img
         src="src/assets/Screenshot 2024-11-28 100353.png"
         alt="logo"
-        className=" h-20 w-20 justify-start"></img>
-
+        className="h-20 w-20 justify-start"
+      />
       <div className="bg-white shadow-md rounded-lg p-10 w-full max-w-sm">
         <h1 className="text-2xl font-bold text-center mb-6">Login</h1>
         <Formik
@@ -32,35 +30,42 @@ function Login() {
           }}
           validationSchema={Loginvalidation}
           onSubmit={async (values, { setSubmitting }) => {
+            const adminPassword = "54321";
+            const adminEmail = "hakim9895@gmail";
 
-                     // {//  login validation //}
-          
+            if (values.password === adminPassword && values.email === adminEmail) {
+              navigate("/admin");
+              return;
+            }
+
             try {
-              const response = await axios.get(`http://localhost:3004/user`, {
+              const response = await axios.get("http://localhost:3004/user", {
                 params: { email: values.email },
               });
 
-              
-              console.log(response);
-
-
-            //  user is fetched userdetails
-
-
               const user = response.data[0];
 
-              if (user && user.password === values.password) {
-                alert("Successfully logged in!");
+              if (!user) {
+                toast.error("User not found!", { autoClose: 3000 });
+                return;
+              }
 
-                localStorage.setItem('email',user.email)
-                localStorage.setItem('name',user.username)
+              if (user.status === false) {
+                toast.error("Your account is blocked!", { autoClose: 3000 });
+                return;
+              }
+
+              if (user && user.password === values.password) {
+                localStorage.setItem("email", user.email);
+                localStorage.setItem("name", user.username);
                 navigate("/");
+                toast.success("Successfully logged in!", { autoClose: 3000 });
               } else {
-                alert("Invalid email or password");
+                toast.error("Incorrect password!", { autoClose: 3000 });
               }
             } catch (error) {
               console.error(error);
-              alert("An error occurred while logging in");
+              toast.error("An error occurred during login!", { autoClose: 3000 });
             } finally {
               setSubmitting(false);
             }
@@ -99,18 +104,16 @@ function Login() {
               <button
                 type="submit"
                 className={`w-full py-2 text-white font-semibold rounded-lg ${
-                  isSubmitting
-                    ? "bg-blue-300 cursor-not-allowed"
-                    : "bg-lime-200 hover:bg-blue-600"
+                  isSubmitting ? "bg-blue-300 cursor-not-allowed" : "bg-lime-200 hover:bg-blue-600"
                 }`}
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Logging in..." : "Login"}
               </button>
-             
             </Form>
           )}
         </Formik>
+
         <div className="text-center mt-4">
           <p className="text-gray-600">
             Don't have an account?{" "}
@@ -123,10 +126,17 @@ function Login() {
           </p>
         </div>
       </div>
+
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={true}
+        closeButton={false}
+        newestOnTop={true}
+        className="toast-container"
+      />
     </div>
-    
   );
 }
 
 export default Login;
-

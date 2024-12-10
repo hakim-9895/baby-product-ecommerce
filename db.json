@@ -1,149 +1,41 @@
 {
   "user": [
     {
-      "id": "5d28",
-      "username": "suhail",
-      "email": "suhail@gmail.com",
-      "password": "12345",
-      "cart": [],
-      "order": [
-        {
-          "date": "12/4/2024",
-          "name": "suhail",
-          "address": "cherukara",
-          "payment": "paypal",
-          "items": [
-            {
-              "id": "1",
-              "name": "tshirt",
-              "price": "499",
-              "catagories": "clothings",
-              "age": "under 2",
-              "quntities": 300,
-              "url": "src/assets/gown.jpeg",
-              "description": "babies tshirt 100% cotton composition age under 2",
-              "quantity": 1
-            }
-          ]
-        },
-        {
-          "date": "12/4/2024",
-          "name": "abdul hakim",
-          "address": "baithul hamd korothroad near panadmmal mup school",
-          "payment": "",
-          "items": [
-            {
-              "id": "1",
-              "name": "tshirt",
-              "price": "499",
-              "catagories": "clothings",
-              "age": "under 2",
-              "quntities": 300,
-              "url": "src/assets/gown.jpeg",
-              "description": "babies tshirt 100% cotton composition age under 2",
-              "quantity": 1
-            }
-          ]
-        },
-        {
-          "date": "12/5/2024",
-          "name": "hakim",
-          "address": "baithul hamd korothroad near panadmmal mup school",
-          "payment": "",
-          "items": [
-            {
-              "id": "2",
-              "name": "Baby Socks",
-              "price": "199",
-              "categories": "clothing",
-              "age": "0-6 months",
-              "quantities": 200,
-              "url": "",
-              "description": "Soft and warm baby socks, perfect for infants aged 0-6 months.",
-              "quantity": 1
-            },
-            {
-              "id": "12",
-              "name": "Nouring hair oil",
-              "price": "249",
-              "categories": "skin care",
-              "age": "all ages",
-              "quantities": 200,
-              "url": "src/assets/Mother-Sparsh-Nourishing-Hair-Oil-for-Baby-1.webp",
-              "description": "Tear-free baby shampoo enriched with aloe vera for soft and shiny hair.",
-              "quantity": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "c789",
-      "username": "Hisham",
-      "email": "hishamc@gmail.com",
-      "password": "123456",
-      "cart": [],
-      "order": [
-        {
-          "date": "12/5/2024",
-          "name": "",
-          "address": "",
-          "payment": "",
-          "items": [
-            {
-              "id": "6",
-              "name": " Red Toddler Gown",
-              "price": "899",
-              "categories": "clothing",
-              "age": "1-2 years",
-              "quantities": 180,
-              "url": "src/assets/red gown.jpg",
-              "description": "Elegant gown for toddlers, made with lightweight and soft fabric.",
-              "quantity": 6
-            }
-          ]
-        },
-        {
-          "date": "12/5/2024",
-          "name": "abdul hakim",
-          "address": "asfadsfasfasdf",
-          "payment": "cash",
-          "items": []
-        },
-        {
-          "date": "12/5/2024",
-          "name": "",
-          "address": "",
-          "payment": "",
-          "items": []
-        }
-      ]
-    },
-    {
-      "id": "4131",
-      "username": "hakim",
-      "email": "hakim@gmail.com",
+      "id": "2cd4",
+      "username": "shahid",
+      "email": "shahid@gmail.com",
       "password": "12345",
       "cart": [
         {
-          "id": "5",
-          "name": "Printed Baby Socks",
-          "price": "249",
+          "id": "4",
+          "name": "red cotton dungree",
+          "price": "499",
           "categories": "clothing",
-          "age": "6-12 months",
-          "quantities": 250,
-          "url": "src/assets/hairbow.avif",
-          "description": "Colorful printed socks for babies, ensuring comfort and style.",
+          "age": "under 2",
+          "quantities": 300,
+          "url": "src/assets/dungree1.jpg",
+          "description": "100% cotton dungree, ideal for toddlers under 2 years old.",
           "quantity": 1
         }
       ],
       "order": [
         {
-          "date": "12/5/2024",
-          "name": "abdul hakim",
+          "date": "12/9/2024",
+          "name": "shahid",
           "address": "baithul hamd korothroad near panadmmal mup school",
           "payment": "",
           "items": [
+            {
+              "id": "1",
+              "name": "tshirt",
+              "price": "499",
+              "catagories": "clothings",
+              "age": "under 2",
+              "quntities": 300,
+              "url": "src/assets/gown.jpeg",
+              "description": "babies tshirt 100% cotton composition age under 2",
+              "quantity": 1
+            },
             {
               "id": "3",
               "name": "Infant Gown",
@@ -154,51 +46,11 @@
               "url": "src/assets/gown2.jpeg",
               "description": "Comfortable and breathable gown for infants, made of organic cotton.",
               "quantity": 1
-            },
-            {
-              "id": "5",
-              "name": "Printed Baby Socks",
-              "price": "249",
-              "categories": "clothing",
-              "age": "6-12 months",
-              "quantities": 250,
-              "url": "src/assets/hairbow.avif",
-              "description": "Colorful printed socks for babies, ensuring comfort and style.",
-              "quantity": 1
-            }
-          ]
-        },
-        {
-          "date": "12/5/2024",
-          "name": "",
-          "address": "",
-          "payment": "",
-          "items": [
-            {
-              "id": "6",
-              "name": " Red Toddler Gown",
-              "price": "899",
-              "categories": "clothing",
-              "age": "1-2 years",
-              "quantities": 180,
-              "url": "src/assets/red gown.jpg",
-              "description": "Elegant gown for toddlers, made with lightweight and soft fabric.",
-              "quantity": 1
-            },
-            {
-              "id": "5",
-              "name": "Printed Baby Socks",
-              "price": "249",
-              "categories": "clothing",
-              "age": "6-12 months",
-              "quantities": 250,
-              "url": "src/assets/hairbow.avif",
-              "description": "Colorful printed socks for babies, ensuring comfort and style.",
-              "quantity": 1
             }
           ]
         }
-      ]
+      ],
+      "status": true
     }
   ],
   "Products": [

@@ -42,9 +42,14 @@ function Register() {
             password: "",
             cart:[],
             order:[],
+            status:true
+            
 
           }}
+       
           onSubmit={async (values, { setSubmitting }) => {
+                   
+
             try {
               const emailerror = await checkEmailexist(values.email);
               if (emailerror) {
