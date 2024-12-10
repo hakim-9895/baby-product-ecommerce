@@ -56,23 +56,23 @@
   "Products": [
     {
       "id": "1",
-      "name": "tshirt",
+      "name": "gawn",
       "price": "499",
       "catagories": "clothings",
       "age": "under 2",
-      "quntities": 300,
+      "quantities": "100",
       "url": "src/assets/gown.jpeg",
       "description": "babies tshirt 100% cotton composition age under 2"
     },
     {
       "id": "2",
-      "name": "Baby Socks",
+      "name": "micky mouse cap",
       "price": "199",
       "categories": "clothing",
       "age": "0-6 months",
-      "quantities": 200,
-      "url": "",
-      "description": "Soft and warm baby socks, perfect for infants aged 0-6 months."
+      "quantities": "50",
+      "url": "src/assets/imgcap.jpeg",
+      "description": "Soft and warm baby cap, perfect for infants aged 0-6 months."
     },
     {
       "id": "3",
@@ -96,12 +96,12 @@
     },
     {
       "id": "5",
-      "name": "Printed Baby Socks",
+      "name": "denim shirt",
       "price": "249",
       "categories": "clothing",
       "age": "6-12 months",
       "quantities": 250,
-      "url": "src/assets/hairbow.avif",
+      "url": "src/assets/hmgoepprod.jpeg",
       "description": "Colorful printed socks for babies, ensuring comfort and style."
     },
     {

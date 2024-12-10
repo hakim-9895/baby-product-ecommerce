@@ -10,11 +10,15 @@ import Payment from './Combonents/main/Payment'
 import Adminhome from './Combonents/Admin/Adminhome'
 import Userdetails from './Combonents/Admin/Userdetails'
 
+import Productditails from './Combonents/Admin/Productditails'
+import Admincontext from './Combonents/Admin/Admincontext'
+
 function App() {
 
   return (
     <>
       <div>
+        <Admincontext>
       <Productprovider> 
 <Routes>
    <Route path='register' element={<Register/>}/>  
@@ -25,9 +29,11 @@ function App() {
    <Route path='orderlist' element={<Orderpage/>}/>
    <Route path='Admin' element={<Adminhome/>}/>
    <Route path='User' element={<Userdetails/>}/>
+   <Route path='productditails' element={<Productditails/>}/>
 
 </Routes>
 </Productprovider>
+</Admincontext>
 
        </div>
     </>

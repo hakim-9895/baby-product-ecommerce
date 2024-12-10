@@ -1,5 +1,6 @@
 import React from 'react'
 import { LuShoppingBag } from "react-icons/lu";
+import { FaUserCircle } from "react-icons/fa";
 
 
 function Adminhome() {
@@ -22,10 +23,11 @@ function Adminhome() {
                 <a href="/dashboard">Dashboard</a>
               </li>
               <li className="px-4 py-2 hover:bg-gray-700">
-                <a href="/User">Users</a>
+                <a href="/User">  <FaUserCircle className='display: inline-block mt' />
+                    Users</a>
               </li>
-              <li className="px-4 py-2 hover:bg-gray-700">
-                <a href="/settings"><LuShoppingBag />        product details</a>
+              <li className="px-4 py-2 hover:bg-gray-700  ">
+                <a href="/productditails "><LuShoppingBag  className='display: inline-block '/>  product details</a>
                 </li>
         
             </ul>
