@@ -15,7 +15,7 @@ function Login() {
   });
 
   return (
-    <div className="flex justify-center items-center h-screen bg-light-green">
+    <div className="flex justify-center items-center h-screen bg-light-green ">
       <img
         src="src/assets/Screenshot 2024-11-28 100353.png"
         alt="logo"
@@ -34,6 +34,7 @@ function Login() {
             const adminEmail = "hakim9895@gmail";
 
             if (values.password === adminPassword && values.email === adminEmail) {
+              localStorage.setItem("role","admin")
               navigate("/admin");
               return;
             }

@@ -5,19 +5,7 @@
       "username": "shahid",
       "email": "shahid@gmail.com",
       "password": "12345",
-      "cart": [
-        {
-          "id": "4",
-          "name": "red cotton dungree",
-          "price": "499",
-          "categories": "clothing",
-          "age": "under 2",
-          "quantities": 300,
-          "url": "src/assets/dungree1.jpg",
-          "description": "100% cotton dungree, ideal for toddlers under 2 years old.",
-          "quantity": 1
-        }
-      ],
+      "cart": [],
       "order": [
         {
           "date": "12/9/2024",
@@ -48,6 +36,58 @@
               "quantity": 1
             }
           ]
+        },
+        {
+          "date": "12/12/2024",
+          "name": "hakim",
+          "address": "baithul hamd korothroad near panadmmal mup school",
+          "payment": "",
+          "items": [
+            {
+              "id": "13",
+              "name": "Moistersing cream",
+              "price": "99",
+              "categories": "skin care",
+              "age": "newborn and up",
+              "quantities": 300,
+              "url": "src/assets/Daily-Moisturizing-Milky-Soft-Head-to-Toe-Baby-Wash-200ml.webp",
+              "description": "Mild and hypoallergenic baby soap made with shea butter and coconut oil.",
+              "quantity": 1
+            },
+            {
+              "id": "2",
+              "name": "micky mouse cap",
+              "price": "1000",
+              "categories": "clothing",
+              "age": "0-6 months",
+              "quantities": "50",
+              "url": "/src/assets/imgcap.jpeg",
+              "description": "Soft and warm baby cap, perfect for infants aged 0-6 months.",
+              "quantity": 1
+            },
+            {
+              "id": "3",
+              "name": "Infant Gown",
+              "price": "799",
+              "categories": "clothing",
+              "age": "6-12 months",
+              "quantities": "15",
+              "url": "/src/assets/gown2.jpeg",
+              "description": "Comfortable and breathable gown for infants, made of organic cotton.",
+              "quantity": 2
+            },
+            {
+              "id": "7",
+              "name": " T-Shirt",
+              "price": "599",
+              "categories": "clothing",
+              "age": "2-3 years",
+              "quantities": 320,
+              "url": "/src/assets/plan tshirt.jpg",
+              "description": "Adorable  t-shirt for kids, crafted from premium cotton.",
+              "quantity": 1
+            }
+          ]
         }
       ],
       "status": true
@@ -60,18 +100,18 @@
       "price": "499",
       "catagories": "clothings",
       "age": "under 2",
-      "quantities": "100",
-      "url": "src/assets/gown.jpeg",
+      "quantities": "110",
+      "url": "/src/assets/gown.jpeg",
       "description": "babies tshirt 100% cotton composition age under 2"
     },
     {
       "id": "2",
       "name": "micky mouse cap",
-      "price": "199",
+      "price": "1000",
       "categories": "clothing",
       "age": "0-6 months",
       "quantities": "50",
-      "url": "src/assets/imgcap.jpeg",
+      "url": "/src/assets/imgcap.jpeg",
       "description": "Soft and warm baby cap, perfect for infants aged 0-6 months."
     },
     {
@@ -80,8 +120,8 @@
       "price": "799",
       "categories": "clothing",
       "age": "6-12 months",
-      "quantities": 150,
-      "url": "src/assets/gown2.jpeg",
+      "quantities": "15",
+      "url": "/src/assets/gown2.jpeg",
       "description": "Comfortable and breathable gown for infants, made of organic cotton."
     },
     {
@@ -91,7 +131,7 @@
       "categories": "clothing",
       "age": "under 2",
       "quantities": 300,
-      "url": "src/assets/dungree1.jpg",
+      "url": "/src/assets/dungree1.jpg",
       "description": "100% cotton dungree, ideal for toddlers under 2 years old."
     },
     {
@@ -101,7 +141,7 @@
       "categories": "clothing",
       "age": "6-12 months",
       "quantities": 250,
-      "url": "src/assets/hmgoepprod.jpeg",
+      "url": "/src/assets/hmgoepprod.jpeg",
       "description": "Colorful printed socks for babies, ensuring comfort and style."
     },
     {
@@ -111,7 +151,7 @@
       "categories": "clothing",
       "age": "1-2 years",
       "quantities": 180,
-      "url": "src/assets/red gown.jpg",
+      "url": "/src/assets/red gown.jpg",
       "description": "Elegant gown for toddlers, made with lightweight and soft fabric."
     },
     {
@@ -121,7 +161,7 @@
       "categories": "clothing",
       "age": "2-3 years",
       "quantities": 320,
-      "url": "src/assets/plan tshirt.jpg",
+      "url": "/src/assets/plan tshirt.jpg",
       "description": "Adorable  t-shirt for kids, crafted from premium cotton."
     },
     {
@@ -141,7 +181,7 @@
       "categories": "clothing",
       "age": "under 1",
       "quantities": 120,
-      "url": "src/assets/suit.jpg",
+      "url": "/src/assets/suit.jpg",
       "description": "Casual wear shirt and cotten pants with bow 100% cotton soft."
     },
     {
@@ -161,7 +201,7 @@
       "categories": "skin care",
       "age": "all ages",
       "quantities": 150,
-      "url": "src/assets/Mother-Sparsh-Mosquito-Repellent-Patches-for-baby-1_38fd272f-db92-4884-8b55-3ed9d48ae3f7.webp",
+      "url": "/src/assets/Mother-Sparsh-Mosquito-Repellent-Patches-for-baby-1_38fd272f-db92-4884-8b55-3ed9d48ae3f7.webp",
       "description": "Gentle and moisturizing baby lotion with natural ingredients, suitable for daily use."
     },
     {
@@ -171,7 +211,7 @@
       "categories": "skin care",
       "age": "all ages",
       "quantities": 200,
-      "url": "src/assets/Mother-Sparsh-Nourishing-Hair-Oil-for-Baby-1.webp",
+      "url": "/src/assets/Mother-Sparsh-Nourishing-Hair-Oil-for-Baby-1.webp",
       "description": "Tear-free baby shampoo enriched with aloe vera for soft and shiny hair."
     },
     {
@@ -181,7 +221,7 @@
       "categories": "skin care",
       "age": "newborn and up",
       "quantities": 300,
-      "url": "src/assets/Daily-Moisturizing-Milky-Soft-Head-to-Toe-Baby-Wash-200ml.webp",
+      "url": "/src/assets/Daily-Moisturizing-Milky-Soft-Head-to-Toe-Baby-Wash-200ml.webp",
       "description": "Mild and hypoallergenic baby soap made with shea butter and coconut oil."
     },
     {
@@ -191,7 +231,7 @@
       "categories": "skin care",
       "age": "0-3 years",
       "quantities": 250,
-      "url": "src/assets/Face-Body-Foaming-Wash1.webp",
+      "url": "/src/assets/Face-Body-Foaming-Wash1.webp",
       "description": "Soothing cream to protect and heal diaper rashes, formulated with zinc oxide."
     },
     {
@@ -201,7 +241,7 @@
       "categories": "skin care",
       "age": "all ages",
       "quantities": 180,
-      "url": "src/assets/best-baby-soap-made-with-Milk-_-Coconut-Milky-soft-baby-wipes-1.webp",
+      "url": "/src/assets/best-baby-soap-made-with-Milk-_-Coconut-Milky-soft-baby-wipes-1.webp",
       "description": "Lightweight baby oil infused with almond oil for soft and nourished skin."
     },
     {
@@ -211,7 +251,7 @@
       "categories": "skin care",
       "age": "newborn and up",
       "quantities": 120,
-      "url": "src/assets/body lotion.webp",
+      "url": "/src/assets/body lotion.webp",
       "description": "Rich and hydrating face cream for babies, perfect for sensitive skin."
     },
     {
@@ -221,7 +261,7 @@
       "categories": "skin care",
       "age": "6 months and up",
       "quantities": 100,
-      "url": "src/assets/tooth  brush.webp",
+      "url": "/src/assets/tooth  brush.webp",
       "description": "SPF 50+ sunscreen specially designed to protect babys delicate skin from UV rays."
     },
     {
@@ -231,7 +271,7 @@
       "categories": "skin care",
       "age": "all ages",
       "quantities": 400,
-      "url": "src/assets/baby wiper.webp",
+      "url": "/src/assets/baby wiper.webp",
       "description": "Gentle and unscented baby wipes, ideal for cleaning and moisturizing the skin."
     },
     {
@@ -241,7 +281,7 @@
       "categories": "skin care",
       "age": "newborn and up",
       "quantities": 150,
-      "url": "src/assets/hair oil.webp",
+      "url": "/src/assets/hair oil.webp",
       "description": "Nourishing massage oil made with jojoba and chamomile for a calming effect."
     },
     {
@@ -251,8 +291,26 @@
       "categories": "skin care",
       "age": "all ages",
       "quantities": 130,
-      "url": "src/assets/balm.webp",
+      "url": "/src/assets/balm.webp",
       "description": "Mild body wash for babies, infused with oatmeal and lavender for gentle cleansing."
+    },
+    {
+      "id": "95a6",
+      "name": "pant",
+      "url": "https://lp2.hm.com/hmgoepprod?set=source[/2d/20/2d20b891965bdd994dbef7e2a29e4078757a99a8.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[w],hmver[2]&call=url[file:/product/main]",
+      "categories": "clothing",
+      "age": "2",
+      "quantities": 150,
+      "price": "200"
+    },
+    {
+      "id": "2455",
+      "url": "https://mothersparsh.com/cdn/shop/files/Mother-Sparsh-Plant-Powered-baby-wipes-Grapefruit-pack-of-3-1.webp?v=1714641971&width=713",
+      "name": "Plant Powered Baby Wipes - Grapefruit",
+      "categories": "skin care",
+      "age": "2",
+      "quantities": 300,
+      "price": "399"
     }
   ]
 }

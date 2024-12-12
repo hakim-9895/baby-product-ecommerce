@@ -94,45 +94,52 @@
 
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function Orderpage() {
-  const [orders, setOrders] = useState([]); // State to store orders
-  const [loading, setLoading] = useState(true); // State for loading status
-  const [error, setError] = useState(null); // State for error handling
-
+  const [orders, setOrders] = useState([]); 
+  const [loading, setLoading] = useState(true); 
+  const [error, setError] = useState(null);
+ const navigation = useNavigate()
+ const handleback=()=>{
+  navigation("/")
+ }
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const useremail = localStorage.getItem('email'); // Fetch email from localStorage
+        const useremail = localStorage.getItem('email'); 
         if (!useremail) throw new Error('User email not found in localStorage.');
 
         const response = await axios.get(`http://localhost:3004/user?email=${useremail}`);
-        const fetchedOrders = response.data[0]?.order || []; // Safely access orders
-        setOrders(fetchedOrders); // Update orders state
+        const fetchedOrders = response.data[0]?.order || []; 
+        setOrders(fetchedOrders); 
       } catch (err) {
         console.error('Error fetching orders:', err);
-        setError(err.message); // Update error state
+        setError(err.message);
       } finally {
-        setLoading(false); // Stop loading regardless of success or failure
+        setLoading(false);
       }
     };
 
     fetchOrders();
   }, []);
 
-  // Render loading state
   if (loading) {
     return <p className="text-center text-gray-500">Loading orders...</p>;
   }
 
-  // Render error state
   if (error) {
     return <p className="text-center text-red-500">Error: {error}</p>;
   }
 
-  // Render orders or fallback message
+
   return (
     <div className="p-6">
+        <button
+                  className="mt-4 sm:mt-0 px-4 py-2 bg-green-600 text-white rounded-md text-sm hover:bg-green-700 transition-all"
+              onClick={handleback}  >
+                  back
+                </button>
       <h1 className="text-2xl font-semibold mb-4 text-gray-800">Your Orders</h1>
       {orders.length > 0 ? (
         <ul className="space-y-4">

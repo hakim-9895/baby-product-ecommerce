@@ -11,8 +11,19 @@ function Productditails() {
           editproduct,
           seteditProduct,
           setmodalIsopen,
-          updatefunction
+          updatefunction,
+          addProducts
         } = useContext(Adminprovider);
+
+        const handleSubmit=()=>{
+          if(!editproduct.id){
+            addProducts(editproduct)
+          }else{
+            updatefunction(editproduct)
+          }
+       
+
+        }
 
 
  
@@ -30,7 +41,7 @@ function Productditails() {
  
   const handleDelete = (id) => {
     console.log(`Deleting product with id: ${id}`);
-    // Add your delete logic here
+    
   };
 
   const handleAdd = () => {
@@ -114,6 +125,33 @@ function Productditails() {
               />
             </div>
 
+
+            <div className="mb-3">
+              <label className="block text-sm font-medium mb-1">categorie</label>
+              <input
+                type="text"
+                name="categories"
+                value={editproduct.categories}
+                onChange={handleInput}
+                className="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter name"
+              />
+            </div>
+
+
+            <div className="mb-3">
+              <label className="block text-sm font-medium mb-1">age</label>
+              <input
+                type="text"
+                name="age"
+                value={editproduct.age}
+                onChange={handleInput}
+                className="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter name"
+              />
+            </div>
+
+
             <div className="mb-3">
               <label className="block text-sm font-medium mb-1">Quantities</label>
               <input
@@ -146,7 +184,7 @@ function Productditails() {
                 Cancel
               </button>
               <button
-             onClick={ updatefunction}
+             onClick={ handleSubmit}
                 className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
               >
                 Submit
