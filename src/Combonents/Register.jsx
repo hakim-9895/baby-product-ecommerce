@@ -72,7 +72,7 @@ function Register() {
         >
           {({ isSubmitting }) => (
             <Form className="space-y-4">
-              {/* Username Field */}
+              
               <div>
                 <label
                   htmlFor="username"

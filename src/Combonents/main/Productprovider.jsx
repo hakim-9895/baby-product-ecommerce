@@ -27,7 +27,6 @@ const Productprovider = React.memo(({ children }) => {
   
   const useremail = localStorage.getItem("email");
 
-  // Fetch products
   useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -59,7 +58,7 @@ const Productprovider = React.memo(({ children }) => {
         setCart(cartData);
       } catch (error) {
         console.error("Error fetching cart:", error);
-        setCart([]); // Ensure cart is never undefined
+        setCart([]); 
       }
     };
 
